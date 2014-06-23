@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+<canvas width="600" height="200"></canvas>    
+</head>
+<body>
+
+
+
+<script>
+  var cx = document.querySelector("canvas").getContext("2d");
+  var x = 0;
+  var y = 0;
+
+  cx.beginPath();
+  cx.moveTo(x+30,y)
+  cx.lineTo(x+90,y);
+  cx.lineTo(x+120, y+70);
+  cx.lineTo(x,y+70);
+  cx.closePath();
+  cx.stroke();
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+<canvas width="600" height="600"></canvas>    
+</head>
+<body>
+
+
+
+<script>
+  var cx = document.querySelector("canvas").getContext("2d");
+
+  angle = .01;
+  radius = 10;
+  while (angle <= 8*Math.PI) {
+  	cx.arc(300, 300, radius, angle, angle+.1)
+  	angle += .1;
+  	radius += .5;
+  	console.log(angle, radius)
+  	cx.stroke();
+  }
+
+
+</script>
+</body>
+</html>
